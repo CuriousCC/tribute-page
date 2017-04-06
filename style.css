@@ -1,0 +1,69 @@
+/*html {
+  font-size: 20px;
+  font-family: ;
+  background-color:;
+  line-height: 1;
+}*/
+body{
+	background-color: #9F2A2C;
+	margin-top: 0px;	
+}
+main{
+	margin-left: 110px;
+	margin-right: 110px;
+	background-color: #6DD88D;
+}
+.bckgrnd-img{
+	margin-left: 110px;
+	margin-right: 110px;
+	background-image: url(bostrom-c.jpg);
+	background-size: 65% 99%;
+	min-height: 750px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	/* background-size: cover;*/
+	object-fit: fill;	/*background-color: #cfd7c7; /*light color*/
+	margin-top: 0px;
+	/*border-style: solid;*/
+  }
+
+ 
+h1{
+	text-align: center;
+	font-family: 'Bevan', cursive !important;
+	font-size: 35px;
+	word-spacing: 12px;
+	line-height: 2;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Rock Salt' !important;
+	line-height: 2;
+}
+
+h3{
+	font-family: 'FontAwesome' !important;
+	text-align:center;
+	line-height: 2;
+	font-size: 25px;
+}
+
+hr{
+	margin-top: 65px;
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-bottom: 51px;
+}
+
+ul{
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-right: 200px;
+	margin-left: 200px;
+	line-height: 31.5px;
+	text-align: justify;
+	font-size: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale = 1.0">
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Rock+Salt" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+	<title>My favourite tale</title>
+	<style>
+		button.accordion {
+			background-color: #DADCCE;
+			color: black;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: center;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		button.accordion.active, button.accordion:hover {
+   			 background-color: #BFBD98;
+		}
+
+		div.panel {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+    </style>
+	
+</head>
+<body>
+	<main>
+		
+	<header>	
+			<h1>Nick Bostrom</h1>
+			<h2>A tribute page</h2>
+			<hr>
+	</header>
+	<div class="bckgrnd-img"></div>
+	<article>
+		<h3>Meet one of the <a href="https://www.hottopics.ht/stories/lists/10-global-thinkers-concerned-with-the-ethics-of-ai/" target="_blank"> 10 Gatekeepers of Humanity!</a></h3> 
+								<div class="col-sm-12">
+								<ul>
+									<li>Nick Bostrom is a philosopher and director of the Future of Humanity Institute at Oxford University.</li>
+									<li>He is best known for his work on existential risk, the anthropic principle, human enhancement ethics, superintelligence risks, the reversal test, and consequentialism.</li>
+									<li>He is the author of over 200 publications,including Superintelligence: Paths, Dangers, Strategies and Anthropic Bias: Observation Selection Effects in Science and Philosophy.</li>
+									<li>In 2009 and 2015, he was included in Foreign Policy's Top 100 Global Thinkers list.</li>
+									<li>Bostrom's work on superintelligence – and his concern for its existential risk to humanity over the coming century – has brought both Elon Musk and Bill Gates to similar thinking.</li>	
+									<li>In January 2015, Bostrom joined Stephen Hawking, Max Tegmark, Elon Musk, Martin Rees, Jaan Tallinn among others, in signing the <a href="http://futureoflife.org/ai-open-letter/" target="_blank">Future of Life Institute's open letter</a> warning of the potential dangers of AI. </li><br></ul>	
+								</div>										
+	
+	
+		<button class="accordion"><h2>Brief Bio</h2></button>
+		<div class="panel">
+		 <div class="col-sm-12">
+				<ul>
+					<li>Born 10 March 1973 in Helsingborg, Sweden. Grew up by the seashore. Was bored in school.</li> <br>
+					<li>At age fifteen or sixteen had an intellectual awakening and feeling that he had wasted the first one and a half decades of his life, resolved to focus on what's important. Since he did not know what was important, and how to find out, he decided to start by trying to place himself in a better position to find out. So he began a project of intellectual self-development, which he pursued with great intensity for the next one and a half decades. He sought to educate himself in a wide variety of disciplines, including anthropology, art, literature, and science.</li> <br>
+					<li>As an undergraduate, he studied many subjects in parallel (He holds a B.A. in philosophy, mathematics, logic and artificial intelligence). His performance set a national record. He was once expelled for studying too much, after the head of Umeå University psychology department discovered that he was concurrently following several other full-time programs of study (physics, philosophy, and mathematical logic), which he believed to be psychologically impossible.</li><br>
+				</ul>
+			</div>
+		</div>
+
+		<button class="accordion">Section 2</button>
+		<div class="panel">
+
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 3</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  <iframe width="600" height="350" src="https://www.youtube.com/embed/gwFCbJ6bKAw?ecver=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</article>
+</main>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+</body>
+</html>
