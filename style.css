@@ -24,9 +24,7 @@ main{
 	background-position: center center;
 	background-repeat: no-repeat;
 	/* background-size: cover;*/
-	object-fit: fill;	/*background-color: #cfd7c7; /*light color*/
-	margin-top: 0px;
-	/*border-style: solid;*/
+	object-fit: contain;	
   }
 
  
